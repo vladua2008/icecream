@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      body {
+        background-color: rgba(255, 245, 246, 1);
+        font-size: 16px;
+        font-family: "DM Sans", sans-serif;
+      }
+
+      .container {
+        width: 1282px;
+        margin: 0 auto;
+      }
+      .section-wrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 74px;
+
+        margin-top: 102px;
+        align-items: center;
+        background-image: url("sectionbg1\ 1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .text-container {
+        width: 463px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 35px; */
+        margin-top: -120px;
+      }
+      .section-promo {
+        color: rgba(255, 165, 186, 1);
+        font-size: 30px;
+        text-align: center;
+        font-family: Titan One;
+        display: flex;
+        justify-content: center;
+      }
+      .section-name {
+        color: rgba(212, 20, 67, 1);
+        font-size: 58px;
+        text-align: center;
+        font-family: Titan One;
+      }
+      .cow-desc {
+        color: rgba(0, 0, 0, 1);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28.16px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        margin-top: 100px;
+      }
+      .cow-desc1 {
+        color: rgba(144, 126, 130, 1);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 27.16px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        margin-top: 35px;
+      }
+      .cow-desc1-span {
+        color: rgba(144, 126, 130, 1);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 27.16px;
+        letter-spacing: 0.04em;
+        margin-top: 10px;
+        margin-bottom: 45px;
+      }
+      .cow-container {
+        background-image: url("home-pic4\ 1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 516px;
+        height: 516px;
+        background-position: left;
+      }
+      .cow-btn {
+        width: 176px;
+        height: 44px;
+        border-radius: 22px;
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(212, 20, 67, 1);
+      }
+      .cow-btn::after {
+        background-image: url("Vector\ 1.png");
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 7px;
+        color: rgba(212, 20, 67, 1);
+        margin-left: 13.62px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .cow-btn:hover {
+        background-color: transparent;
+      }
+      .cow-info-container {
+        height: 222px;
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 39px;
+      }
+      .cow-info-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .cow-info-img-1 {
+        width: 33px;
+        height: 50px;
+      }
+      .cow-info-img-2 {
+        width: 50px;
+        height: 50px;
+      }
+      .cow-info-img-3 {
+        width: 44px;
+        height: 50px;
+      }
+      .cow-info-title {
+        font-size: 58px;
+        font-weight: 400;
+        text-align: left;
+        color: rgba(212, 20, 67, 1);
+        font-family: Titan One;
+      }
+      .cow-info-desc {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28.16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+      }
+      @media (max-width: 1279px) {
+        .container {
+          width: 772px;
+        }
+
+        .cow-info-img {
+          width: 340px;
+          height: 340px;
+        }
+        .section-promo {
+          width: 100%;
+          justify-content: center;
+          font-size: 26px;
+        }
+        .section-name {
+          font-size: 48px;
+        }
+        .section-wrap {
+          background-image: none;
+          gap: 17px;
+          margin-top: 0px;
+        }
+        .text-container {
+          margin-top: 80px;
+          width: 340px;
+        }
+        .cow-info-container {
+          width: 180px;
+          height: 222px;
+        }
+        .cow-desc {
+          margin-top: 0px;
+          font-size: 14px;
+          height: 79px;
+          line-height: 24.64px;
+          font-weight: 500;
+        }
+
+        .cow-info-wrap {
+          gap: 60px;
+          justify-content: flex-start;
+        }
+        .cow-info-title {
+          font-size: 48px;
+        }
+        .cow-info-desc {
+          font-size: 14px;
+          width: 180px;
+          height: 67px;
+          line-height: 24.36px;
+        }
+        .cow-container {
+          width: 340px;
+          height: 340px;
+        }
+      }
+
+      @media (max-width: 771px) {
+        .container {
+          width: 320px;
+        }
+
+        .section-promo {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20.61px;
+          text-align: center;
+        }
+
+        .cow-desc {
+          line-height: 19.44px;
+          font-size: 12px;
+        }
+        .cow-desc1 {
+          line-height: 19.44px;
+          margin-top: 47px;
+          font-size: 12px;
+        }
+        .cow-desc1-span {
+          line-height: 19.44px;
+          font-size: 12px;
+        }
+        .cow-container {
+          width: 280px;
+          height: 280px;
+        }
+        .section-wrap {
+          flex-direction: column;
+          margin-top: 26px;
+          gap: 0px;
+        }
+        .text-container {
+          margin-top: 46px;
+          width: 100%;
+          margin-bottom: 39px;
+          width: 220px;
+        }
+        .cow-info-wrap {
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+        .cow-info-container {
+          width: 230px;
+          height: 156px;
+          margin-top: 0px;
+          gap: 0px;
+        }
+        .cow-info-title {
+          font-size: 36px;
+          margin-top: 16px;
+          margin-bottom: 13px;
+        }
+        .cow-info-desc {
+          font-size: 12px;
+          width: 230px;
+          height: 36px;
+          line-height: 20.4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="section-promo">TRADITION AND LOVE</p>
+      <p class="section-name">HOW IT'S MADE?</p>
+      <div class="section-wrap">
+        <div class="cow-container"></div>
+        <div class="text-container">
+          <p class="cow-desc">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </p>
+          <p class="cow-desc1">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.
+          </p>
+          <span class="cow-desc1-span"
+            >Aliquam erat volutpat. Aenean accumsan.</span
+          >
+          <button class="cow-btn">Read more</button>
+        </div>
+      </div>
+      <div class="cow-info-wrap">
+        <div class="cow-info-container">
+          <img class="cow-info-img-1" src="./icon1.png" alt="" />
+          <h5 class="cow-info-title">721</h5>
+          <p class="cow-info-desc">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+        <div class="cow-info-container">
+          <img class="cow-info-img-2" src="./icon2.png" alt="" />
+          <h5 class="cow-info-title">16kg</h5>
+          <p class="cow-info-desc">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+        <div class="cow-info-container">
+          <img class="cow-info-img-3" src="./icon3.png" alt="" />
+          <h5 class="cow-info-title">84</h5>
+          <p class="cow-info-desc">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
